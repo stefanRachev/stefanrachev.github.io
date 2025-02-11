@@ -91,12 +91,24 @@ header {
         }
       }
     }
-  }
+    .mobile-toggle {
+      display: none;
+      color: var(--base-800);
+      padding: 10px;
+      @media (max-width: 768px) {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        
+      }
+    }
 
-  @media (max-width: 768px) {
-    nav {
-      ul {
-        display: none;
+    @media (max-width: 768px) {
+      nav {
+        ul {
+          display: none;
+        }
       }
     }
   }
