@@ -130,10 +130,48 @@ header {
   }
 }
 
-section {
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: var(--blue);
+  color: var(--base-100);
+  border-radius: 10px;
+  transition: ease 0.3s all;
+  &:hover {
+    text-decoration: none;
+    background-color: var(--blue-800);
+  }
+  &.white {
+    background-color: white;
+    color: var(--base-800);
+    &:hover {
+      background-color: var(--base-100);
+      color: var(--blue);
+    }
+  }
+
+  &.black {
+    background-color: black ;
+    color:white;
+    &:hover {
+      background-color: var(--base);
+      color: var(--base-100);
+    }
+  }
+}
+
+.container {
   max-width: 1440px;
   margin: auto;
   padding: 20px;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media (max-width: 1440px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .hero {
@@ -159,7 +197,6 @@ section {
     img {
       margin-top: -80px;
       max-width: 420px;
-      
     }
   }
 }
