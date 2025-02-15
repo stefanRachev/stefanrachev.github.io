@@ -130,12 +130,23 @@ header {
   }
 }
 
+section {
+  max-width: 1440px;
+  margin: auto;
+  padding: 20px;
+}
+
 .hero {
   display: flex;
   margin-top: 40px;
   .hero-blue {
     flex: 1;
     background-color: var(--blue-100);
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .hero-yellow {
     flex: 1;
