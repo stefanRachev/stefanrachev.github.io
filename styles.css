@@ -151,8 +151,8 @@ header {
   }
 
   &.black {
-    background-color: black ;
-    color:white;
+    background-color: black;
+    color: white;
     &:hover {
       background-color: var(--base);
       color: var(--base-100);
@@ -174,9 +174,26 @@ header {
   }
 }
 
+h1 {
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 10px;
+  small {
+    display: block;
+    font-weight: 100;
+  }
+  @media (max-width: 1024px) {
+    font-size: 48px;
+  }
+}
+
 .hero {
   display: flex;
+  /* atention */
   margin-top: 40px;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
   .hero-blue {
     flex: 1;
     background-color: var(--blue-100);
@@ -185,6 +202,21 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    .call-to-action {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      a {
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+    .social-links {
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
   }
   .hero-yellow {
     flex: 1;
